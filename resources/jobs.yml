@@ -1,0 +1,19 @@
+---
+jobs:
+  1: 1
+  2:
+    type: 1
+    priority: 1
+    status: IN_PROGRESS
+    job:
+      links:
+      - www.apple.com.sg
+      - www.google.com.sg
+  3:
+    type: 1
+    priority: 1
+    status: IN_PROGRESS
+    job:
+      links:
+      - www.apple.com.sg
+      - www.google.com.sg

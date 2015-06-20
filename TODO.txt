@@ -1,0 +1,13 @@
+**List of public APIS's**
+
+Queue Server
+
+Receive/add jobs to Queue    POST    
+
+Get job from Queue and assign to Consumer    GET    
+
+Get job status   GET
+
+Queue Consumer
+
+Get job status    GET
