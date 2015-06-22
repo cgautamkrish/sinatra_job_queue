@@ -19,10 +19,6 @@ def authenticate(hashvalue)
   end
 end
 
-get '/' do
-  erb :form
-end
-
 post '/add' do
   params = JSON.parse(request.env["rack.input"].read)
   puts params
@@ -68,7 +64,6 @@ post '/add' do
 
   content_type :json
   { :status => 'Job added to queue', :job_id => @id, :job => @new_job }.to_json
-    
 end
 
 get '/job' do
@@ -109,9 +104,7 @@ get '/job' do
     puts @current_job.to_json
     content_type :json
     { :job_id => @x, :job => @current_job }.to_json
-
   end
-
 end
 
 get '/check' do
@@ -133,10 +126,4 @@ get '/check' do
 
   content_type :json
   { :status => @status, :assigned_agent => @current_agent}.to_json
-
 end
-
-end
-
-
-

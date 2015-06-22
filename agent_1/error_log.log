@@ -1,0 +1,35 @@
+Exception on /test [GET]
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python34\lib\site-packages\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python34\lib\site-packages\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python34\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Python34\lib\site-packages\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python34\lib\site-packages\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "server.py", line 28, in test
+    app.interrupt()
+AttributeError: 'Flask' object has no attribute 'interrupt'
+Exception on /test [GET]
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python34\lib\site-packages\flask\app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "C:\Python34\lib\site-packages\flask\app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+Exception on /test [GET]
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python34\lib\site-packages\flask\app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "C:\Python34\lib\site-packages\flask\app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
